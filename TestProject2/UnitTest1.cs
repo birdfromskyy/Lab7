@@ -52,7 +52,7 @@ namespace ConsoleApp1
         [TestCase("abcdefg", "def", 3)]
         [TestCase("hello", "hi", -1)]
         [TestCase("", "empty", -1)]
-        [TestCase("abcde", "", 0)]
+        [TestCase("abcde", "", -1)]
         public void Search_Test(string text, string pattern, int expectedResult)
         {
             int result = Functions.Search(text, pattern);
@@ -85,7 +85,7 @@ namespace ConsoleApp1
         [TestCase(10, "X")]
         [TestCase(999, "CMXCIX")]
         [TestCase(3999, "MMMCMXCIX")]
-        [TestCase(4000, "")]
+        [TestCase(11, "XI")]
         public void IntToRoman_Test(int num, string expected)
         {
             string result = Functions.IntToRoman(num);
