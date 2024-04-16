@@ -168,4 +168,11 @@ public class Functions
                tens[(num % 100) / 10] +
                ones[num % 10];
     }
+    class Program
+    {
+        static void Main()
+        {
+
+        }
+    }
 }
